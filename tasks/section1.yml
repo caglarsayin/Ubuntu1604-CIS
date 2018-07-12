@@ -315,6 +315,7 @@
   when:
       - ubuntu1604cis_rule_1_1_3
       - ubuntu1604cis_rule_1_1_4
+      - ubuntu1604cis_tmp_mount.stat.exists
   tags:
       - level1
       - scored
