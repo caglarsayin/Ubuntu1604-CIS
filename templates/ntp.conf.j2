@@ -32,13 +32,13 @@ server {{ server }} iburst
 #manycastclient 239.255.254.254 autokey # manycast client
 
 # Enable public key cryptography.
-#crypto
+# crypto
 
-includefile /etc/ntp/crypto/pw
+# includefile /etc/ntp/crypto/pw
 
 # Key file containing the keys and key identifiers used when operating
 # with symmetric key cryptography.
-keys /etc/ntp/keys
+# keys /etc/ntp/keys
 
 # Specify the key identifiers which are trusted.
 #trustedkey 4 8 42
