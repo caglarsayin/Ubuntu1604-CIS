@@ -1,5 +1,6 @@
 *.swp
 *.retry
+*.log
 .DS_Store
 test.yml
 tests/local-test.yml
@@ -17,3 +18,4 @@ tests/*.retry
 /lib/
 pip-selfcheck.json
 /share/
+.vagrant/**
