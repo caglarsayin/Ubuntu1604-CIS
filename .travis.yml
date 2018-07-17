@@ -11,3 +11,7 @@ before_install:
 
 script:
   - make test
+
+after_success:
+  - tar -xvf cis-cat-portable.tar.gz
+  - cis-cat-bundle/jre/bin/java -Xmx768M -jar cis-cat-bundle/cis-cat-full/CISCAT.jar -a -aa
