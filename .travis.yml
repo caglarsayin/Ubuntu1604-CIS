@@ -9,7 +9,7 @@ before_install:
   - docker pull solita/ubuntu-systemd
   - make bin/python
 
-script:
+install:
   - make test
 
 after_success:
