@@ -402,6 +402,7 @@
       install_recommends: false
   when:
       - ubuntu1604cis_rule_4_2_3
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - scored
@@ -414,6 +415,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_1_1
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - scored
@@ -442,6 +444,7 @@
       line: '$FileCreateMode 0640'
   when:
       - ubuntu1604cis_rule_4_2_1_3
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - scored
@@ -454,6 +457,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_1_4
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - scored
@@ -467,6 +471,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_1_5
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - notscored
@@ -480,6 +485,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_1_5
+      - ubuntu1604cis_syslog == "rsyslog"
   tags:
       - level1
       - notscored
@@ -493,6 +499,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_2_1
+      - ubuntu1604cis_syslog == "syslog-ng"
   tags:
       - level1
       - scored
@@ -519,6 +526,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_2_3
+      - ubuntu1604cis_syslog == "syslog-ng"
   tags:
       - level1
       - scored
@@ -532,6 +540,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_2_4
+      - ubuntu1604cis_syslog == "syslog-ng"
   tags:
       - level1
       - notscored
@@ -545,6 +554,7 @@
   changed_when: false
   when:
       - ubuntu1604cis_rule_4_2_2_5
+      - ubuntu1604cis_syslog == "syslog-ng"
   tags:
       - level1
       - notscored
