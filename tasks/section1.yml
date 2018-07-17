@@ -544,7 +544,7 @@
   apt:
       name: aide
       state: present
-      install_recommends: false
+      install_recommends: true
   when:
       - ubuntu1604cis_rule_1_3_1
   tags:
